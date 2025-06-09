@@ -5,7 +5,7 @@ A lightweight HTTP server written in C++
 
 ## Features
 
-### HTTP Server
+### Core 
 - **HTTP/1.1 Compliance**: GET, POST and DELETE methods implemented
 - **Static File Serving**: Serves static files from a configurable document root
 - **CGI Execution**: Enables dynamic content generation using CGI scripts
@@ -13,14 +13,13 @@ A lightweight HTTP server written in C++
 - **Multiple Server Support**: Capable of running multiple virtual servers concurrently, each with its own configuration
 - **Concurrent keep-Alive Connections**: Supports simultaneous, long-lived connections from multiple clients
 
-### Security and resilience Features
+### Security 
 - **Malformed Request Handling**: Detects and gracefully rejects malformed HTTP requests
 - **Secure Path Handling**: Prevents directory traversal attacks
 - **Request Size Limits**: Prevent Denial-of-Service (DoS) attacks by limiting client request body size
 - **Request Timeout**: Prevents requests from hanging indefinitely
 
 ### Architecture
-- **Master-Worker Model**: Multi-process architecture for CGI
 - **Event-Driven I/O**: Uses epoll for all I/O operations, ensuring non-blocking behavior
 - **Multi-process for CGI**: Utilizes forking to execute multiple CGI instances
 
