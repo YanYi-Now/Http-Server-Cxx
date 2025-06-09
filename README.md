@@ -1,11 +1,10 @@
 # swift-server
 
-A lightweight HTTP server written in C++
-
+A custom-built, lightweight HTTP server implemented in pure C++.
 
 ## Features
 
-### Core 
+### Core Functions
 - **HTTP/1.1 Compliance**: GET, POST and DELETE methods implemented
 - **Static File Serving**: Serves static files from a configurable document root
 - **CGI Execution**: Enables dynamic content generation using CGI scripts
