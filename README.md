@@ -2,6 +2,7 @@
 
 A lightweight HTTP server written in C++
 
+
 ## Features
 
 ### HTTP Server
@@ -23,6 +24,7 @@ A lightweight HTTP server written in C++
 - **Event-Driven I/O**: Uses epoll for all I/O operations, ensuring non-blocking behavior
 - **Multi-process for CGI**: Utilizes forking to execute multiple CGI instances
 
+
 ## Setup
 
 ### Prerequisites
@@ -42,6 +44,7 @@ cd swift-server
 make
 ```
 
+
 ## Usage
 
 ### Running the Server
@@ -56,20 +59,21 @@ make
 
 | Parameter | Example | Description |
 |---|---|---|
-| `listen` | `8080` | Server listening **IP address and port** 
+| `listen` | 8080 | **Listening IP address and port** 
 | `server` |   | Configuration for **server block** |
-| `location` | `/` | Configuration for **specific URI patterns** |
-| `server_name` | `webserv.com webserv2.com` | Virtual host names |
-| `root` | `www` | **Document root directory** for request |
-| `index` | `index.html login.html index.htm index.php` | **Default files** when directory is request |
-| `error_page` | `404 /error_pages/404.html` | Path to **custom error page** for a given HTTP error code. |
-| `limit_except` | `GET POST` | Restricts **allowed HTTP methods**  |
-| `autoindex` | `on` | Enables or disables **automatic directory listings**  |
-| `client_max_body_size` | `1M` | **Maximum allowed size of the client request body**. |
-| `cgi_exec` | `.py /usr/bin/python3` | Maps a **CGI script extension** to its corresponding executable. |
+| `location` | / | Configuration for **specific URI patterns** |
+| `server_name` | test.com | Virtual **host names |
+| `root` | `www` | **Document root directory** |
+| `index` | `index.html login.html index.htm index.php` | **Default files** for directory request |
+| `error_page` | `404 /error_pages/404.html` | Path to **custom error page** |
+| `limit_except` | `GET POST` | **Allowed HTTP methods**  |
+| `autoindex` | `on` | Enables / disables **automatic directory listings**  |
+| `client_max_body_size` | `1M` | Sets **maximum size of client request body** |
+| `cgi_exec` | `.py /usr/bin/python3` | Maps **CGI script extension** to its executable |
 
 
-## Directory Structure
+
+## Project Structure
 ```
 swift-server/
 ├── src/            # Source code
