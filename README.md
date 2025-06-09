@@ -45,7 +45,7 @@ make
 
 ## Usage
 
-### Running the Server
+### Run server
 
 ```bash
 # Run with config file
@@ -53,7 +53,7 @@ make
 
 ```
 
-### Configuration Options (config.conf)
+### Configuration Options 
 
 | Parameter | Example | Description |
 |---|---|---|
