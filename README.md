@@ -23,7 +23,7 @@ A lightweight HTTP server written in C++
 - **Event-Driven I/O**: Uses epoll for all I/O operations, ensuring non-blocking behavior
 - **Multi-process for CGI**: Utilizes forking to execute multiple CGI instances
 
-## Build and Setup
+## Setup
 
 ### Prerequisites
 - C++ Compiler
@@ -42,9 +42,9 @@ cd swift-server
 make
 ```
 
-## Running the Server
+## Usage
 
-### Basic Usage
+### Running the Server
 
 ```bash
 # Run with config file
@@ -52,7 +52,7 @@ make
 
 ```
 
-### Configuration Options (`config.conf`)
+### Configuration Options (config.conf)
 
 | Parameter | Example | Description |
 |---|---|---|
@@ -68,8 +68,8 @@ make
 | `client_max_body_size` | `1M` | **Maximum allowed size of the client request body**. |
 | `cgi_exec` | `.py /usr/bin/python3` | Maps a **CGI script extension** to its corresponding executable. |
 
-## Directory Structure
 
+## Directory Structure
 ```
 swift-server/
 ├── src/            # Source code
