@@ -1,6 +1,6 @@
 # swift-server
 
-A custom-built, lightweight HTTP server implemented in pure C++.
+A custom-built, lightweight HTTP server implemented in pure C++
 
 ## Features
 
@@ -61,13 +61,13 @@ make
 | `server` |   | Configuration for **server block** |
 | `location` | / | Configuration for **specific URI patterns** |
 | `server_name` | test.com | Virtual **host names |
-| `root` | `www` | **Document root directory** |
-| `index` | `index.html login.html index.htm index.php` | **Default files** for directory request |
-| `error_page` | `404 /error_pages/404.html` | Path to **custom error page** |
-| `limit_except` | `GET POST` | **Allowed HTTP methods**  |
-| `autoindex` | `on` | Enables / disables **automatic directory listings**  |
-| `client_max_body_size` | `1M` | Sets **maximum size of client request body** |
-| `cgi_exec` | `.py /usr/bin/python3` | Maps **CGI script extension** to its executable |
+| `root` | www | **Document root directory** |
+| `index` | index.html login.html | **Default files** for directory request |
+| `error_page` | 404 /error_pages/404.html | Path to **custom error page** |
+| `limit_except` | GET POST | **Allowed HTTP methods**  |
+| `autoindex` | on | Enables / disables **automatic directory listings**  |
+| `client_max_body_size` | 1M | Sets **maximum size of client request body** |
+| `cgi_exec` | .py /usr/bin/python3 | Maps **CGI script extension** to its executable |
 
 
 
