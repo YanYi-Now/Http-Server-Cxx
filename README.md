@@ -1,6 +1,6 @@
 # swift-server
 
-A custom-built, lightweight HTTP server implemented in pure C++
+Lightweight HTTP server implemented in pure C++
 
 ## Features
 
