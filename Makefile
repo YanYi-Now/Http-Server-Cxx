@@ -6,7 +6,7 @@ DEP_DIR      := ./dep
 OBJ_SUBDIRS := $(OBJ_DIR)/server $(OBJ_DIR)/errors $(OBJ_DIR)/request $(OBJ_DIR)/response $(OBJ_DIR)/cgi $(OBJ_DIR)/config
 DEP_SUBDIRS := $(DEP_DIR)/server $(DEP_DIR)/errors $(DEP_DIR)/request $(DEP_DIR)/response $(DEP_DIR)/cgi $(DEP_DIR)/config
 
-CXX = clang++-12
+CXX = c++
 CXXFLAGS = -g -Wall -Werror -Wextra -std=c++98 -Wshadow -MMD -MP
 IFLAGS   := -I$(INCLUDES_DIR)
 
@@ -16,7 +16,7 @@ YELLOW = \033[1;33m
 BLUE = \033[1;34m
 RESET = \033[0m
 
-NAME := webserv
+NAME := server
 
 SRC_FILES := main.cpp \
 				cgi/CGI.cpp \
