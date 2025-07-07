@@ -1,4 +1,4 @@
-# swift-server
+# Http-Server-Cxx
 
 Lightweight HTTP server implemented in pure C++
 
@@ -35,8 +35,8 @@ Lightweight HTTP server implemented in pure C++
 
 ```bash
 # Clone the repository
-git clone https://github.com/YanYi-Now/swift-server.git swift-server
-cd swift-server
+git clone https://github.com/YanYi-Now/swift-server.git server
+cd server
 
 # Build the project
 make
@@ -73,7 +73,7 @@ make
 
 ## Project Structure
 ```
-swift-server/
+server/
 ├── src/            # Source code
 ├── includes/       # Header files
 ├── www/            # Root directory for web server files
