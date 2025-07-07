@@ -6,7 +6,7 @@ DEP_DIR      := ./dep
 OBJ_SUBDIRS := $(OBJ_DIR)/server $(OBJ_DIR)/errors $(OBJ_DIR)/request $(OBJ_DIR)/response $(OBJ_DIR)/cgi $(OBJ_DIR)/config
 DEP_SUBDIRS := $(DEP_DIR)/server $(DEP_DIR)/errors $(DEP_DIR)/request $(DEP_DIR)/response $(DEP_DIR)/cgi $(DEP_DIR)/config
 
-CXX = c++
+CXX = clang++-12
 CXXFLAGS = -g -Wall -Werror -Wextra -std=c++98 -Wshadow -MMD -MP
 IFLAGS   := -I$(INCLUDES_DIR)
 
