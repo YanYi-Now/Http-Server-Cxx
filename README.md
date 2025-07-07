@@ -49,7 +49,7 @@ make
 
 ```bash
 # Run with config file
-./swift config.conf
+./server config.conf
 
 ```
 
