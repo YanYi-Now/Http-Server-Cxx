@@ -7,9 +7,9 @@ Lightweight HTTP server implemented in pure C++
 ### Core Functions
 - **HTTP/1.1 Compliance**: GET, POST and DELETE methods implemented
 - **Static File Serving**: Serves static files from a configurable document root
-- **CGI Execution**: Enables dynamic content generation using CGI scripts
-- **File Upload**: Supports client file uploads in various formats (eg .pdf, .jpeg, and .png)
-- **Multiple Server Support**: Capable of running multiple virtual servers concurrently
+- **CGI Execution**: Dynamic content generation using CGI scripts
+- **File Upload**: Handles file uploads in any format (eg .pdf, .jpeg, and .png)
+- **Multiple Server Support**: Runs multiple virtual servers concurrently
 - **Concurrent keep-Alive Connections**: Supports simultaneous, long-lived connections from multiple clients
 
 ### Security 
