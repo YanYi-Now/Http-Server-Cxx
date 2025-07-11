@@ -10,7 +10,7 @@ Lightweight HTTP server implemented in pure C++
 - **CGI Execution**: Dynamic content generation using CGI scripts
 - **File Upload**: Handles file uploads in any format (eg .pdf, .jpeg, and .png)
 - **Multiple Server Support**: Runs multiple virtual servers concurrently
-- **Concurrent keep-Alive Connections**: Supports simultaneous, long-lived connections from multiple clients
+- **Keep-Alive Connections**: Supports simultaneous, long-lived connections from multiple clients
 
 ### Security 
 - **Malformed Request Handling**: Detects and gracefully rejects malformed HTTP requests
